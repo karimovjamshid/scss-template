@@ -1,0 +1,80 @@
+/* General styles
+ ===================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  //   font-family: $bergenRegular;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: $dark;
+  &.overflow {
+    overflow-y: hidden !important;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //   font-family: $bergenSemiBold;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  scrollbar-width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #b1b1b1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+li {
+  list-style: none;
+}
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.btn {
+  &:focus {
+    outline: none;
+  }
+}
+.container {
+  max-width: 1632px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  &.white {
+    color: #fff;
+  }
+}

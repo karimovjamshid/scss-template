@@ -1,0 +1,11 @@
+/*===== Effect only Chrome on mac =====*/
+.mac.chrome .yourClass {
+  padding: 0;
+}
+
+/*===== Effect only Safari =====*/
+_::-webkit-full-page-media,
+_:future,
+:root .yourClass {
+  padding: 0;
+}
