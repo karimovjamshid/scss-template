@@ -63,6 +63,7 @@
                 <?php
                 $menu = wp_nav_menu([
                     'theme_location' => 'primary_menu',
+                    'menu_class' => 'main-menu',
                     'container' => false,
                     'echo' => true
                 ]);
