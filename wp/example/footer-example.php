@@ -37,6 +37,16 @@
                         'echo' => true
                     ]);
                     ?>
+                    <!-- Example with arrows added to menu -->
+                    <?php
+                    $menu = wp_nav_menu([
+                        'theme_location' => 'footer_menu',
+                        'menu_class' => 'footer__menu',
+                        'container' => false,
+                        'echo' => false
+                    ]);
+                    echo str_replace('<ul class="sub-menu">', '<img width="16px" class="footer__chevron" src="' . WP_IMG . '/icons/chevron-down.svg" alt="" /> <ul class="sub-menu">', $menu);
+                    ?>
                 </div>
                 <div class="footer-top__row">
                     <div class="footer-top__content">
@@ -84,6 +94,7 @@
         </div>
     </div>
 </footer>
+
 <!-- Removing spaces and from string -->
 <a href="tel:+<?php echo str_replace(" ", "", get_field('main_phone', 'options')); ?>">
     <?php echo get_field('main_phone', 'options'); ?>
